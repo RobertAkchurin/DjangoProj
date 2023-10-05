@@ -1,10 +1,9 @@
-from django.shortcuts import HttpResponseRedirect
-from products.models import Product, ProductCategory, Basket
+from common.views import TitleMixin
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import HttpResponseRedirect
 from django.views.generic.base import TemplateView
 from django.views.generic.list import ListView
-from users.models import User
-from common.views import TitleMixin
+from products.models import Basket, Product, ProductCategory
 
 # функции = контроллеры = вьюхи
 
@@ -12,7 +11,6 @@ from common.views import TitleMixin
 class IndexView(TitleMixin, TemplateView):
     template_name = 'products/index.html'
     title = 'Store'
-
 
 
 class ProductListView(TitleMixin, ListView):
