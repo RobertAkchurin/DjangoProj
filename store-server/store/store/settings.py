@@ -94,7 +94,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'robert',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 
@@ -173,5 +173,4 @@ SOCIALACCOUNT_PROVIDERS = {
             'user',
         ],
     }
-
 }
