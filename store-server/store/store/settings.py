@@ -50,6 +50,7 @@ INSTALLED_APPS = [
 
     'products',
     'users',
+    'orders',
 ]
 
 MIDDLEWARE = [
@@ -110,7 +111,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'robert',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 
@@ -172,7 +173,12 @@ LOGOUT_REDIRECT_URL = '/'
 
 # Sending Emails
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'akchurinrobert@yandex.ru'
+EMAIL_HOST_PASSWORD = 'jnabuylzomweaqru'
+EMAIL_USE_SSL = True
 
 #OAuth
 
