@@ -112,7 +112,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'robert',
         'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PORT': '5433',
     }
 }
 
@@ -201,3 +201,9 @@ SOCIALACCOUNT_PROVIDERS = {
 # Celery
 CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
 CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379'
+
+#STRIPE
+
+STRIPE_PUBLIC_KEY = 'pk_test_51O0do8KvNlUWBJgPiko2ebuRO2wyVCAiYGaOK5g0f3hf6DnwY0tkf0nBVqztrtu28OfdxdmtMkLShT0ieb4zcG5Q00hLNrLu67'
+STRIPE_SECRET_KEY = 'sk_test_51O0do8KvNlUWBJgPj6rVDANCEj4paWdh2JdtvuaxVmhSJQL14PvhySdtmRRWBF5vbIt7Obfn2j6le7OHzEkdgryX00StdDzbXT'
+STRIPE_WEBHOOK_SECRET_KEY = 'whsec_65d729b22339fad2d4272f7d66325b159b307b796e25f0d2cb074e76ca4d3518'
